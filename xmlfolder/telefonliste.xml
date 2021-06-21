@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<telefonliste>
+    <telefon>
+        <id>1</id>
+        <firstName>Ramesh_999</firstName>
+        <lastName>Fadatare_99</lastName>
+        <mobilePhone>28</mobilePhone>
+
+    </telefon>
+    <telefon>
+        <id>2</id>
+        <firstName>John_99</firstName>
+        <lastName>Cena_99</lastName>
+        <mobilePhone>28</mobilePhone>
+    </telefon>
+    <telefon>
+        <id>3</id>
+        <firstName>Tom_99</firstName>
+        <lastName>Cruise_99</lastName>
+        <mobilePhone>28</mobilePhone>
+    </telefon>
+</telefonliste>
