@@ -27,7 +27,7 @@ public class App3 {
         telefonList = new ArrayList<Telefonliste>();
 
         for(int i = 0 ; i < nodeList.getLength(); i++){
-            telefonList.add(xmlMarshelling.getTelefonList(nodeList.item(i)));
+            telefonList.add((Telefonliste) xmlMarshelling.getTelefonList(nodeList.item(i)));
 
         }
 

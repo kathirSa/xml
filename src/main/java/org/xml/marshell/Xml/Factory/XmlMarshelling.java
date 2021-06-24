@@ -48,7 +48,9 @@ public class XmlMarshelling {
     public Telefonliste getTelefonList(Node node) {
         return null;
     }
-
+    public <Thing> Thing getTelefonListGeneric(Node node) {
+        return null;
+    }
     public List<Telefonliste> getAllTelefonList(XmlMarshelling xmlMarshelling,String filePath, String ElementsByTagName)
     {
         return null;

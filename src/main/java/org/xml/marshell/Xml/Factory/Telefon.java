@@ -33,7 +33,7 @@ public class Telefon extends XmlMarshelling{
         }
         return telefonliste;
     }
-
+   @Override
    public List<Telefonliste> getAllTelefonList(XmlMarshelling xmlMarshelling,String filePath, String ElementsByTagName)
    {
 
@@ -49,5 +49,19 @@ public class Telefon extends XmlMarshelling{
 
        return telefonList;
    }
+    @Override
+    public <Thing> Thing getTelefonListGeneric(Node node) {
+        // XMLReaderDOM domReader = new XMLReaderDOM();
+        Telefonliste telefonliste = new Telefonliste();
+
+        if (node.getNodeType() == Node.ELEMENT_NODE) {
+            Element element = (Element) node;
+            telefonliste.setId(Integer.parseInt(getXmlTagValue("id", element)));
+            telefonliste.setFirstName(getXmlTagValue("firstName", element));
+            telefonliste.setLastName(getXmlTagValue("lastName", element));
+            telefonliste.setMobilePhone(Integer.parseInt(getXmlTagValue("mobilePhone", element)));
+        }
+        return (Thing) telefonliste;
+    }
 
 }
